@@ -1,0 +1,1 @@
+'''This file trains networks at different training paradigms to highlight the emergence of parts-based representations.'''
