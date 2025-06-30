@@ -2,6 +2,8 @@ import torch
 import numpy as np 
 import matplotlib.pyplot as plt 
 
+from model.model_stdp_WTA import *
+
 from model.spikegen import *
 from learning.stdp import *
 
@@ -65,7 +67,7 @@ def viz_model(model, epoch, save_path):
         for ax in axes[num_neurons:]:
             ax.axis("off")
         plt.tight_layout()
-        plt.savefig(f"{save_path}/{num_neurons}_Neurons_Network_{title.lower()}--{epoch}_Epoch.png", dpi=200)
+        plt.savefig(f"{save_path}/{num_neurons}_Neurons_Network_{title.lower()}--{epoch}_Epoch.png", dpi=100)
         plt.close()
     
     # build ON, OFF, and RF arrays

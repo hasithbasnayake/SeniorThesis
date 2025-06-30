@@ -4,7 +4,7 @@ from lgn.DoG import *
 # Model Hyperparameters 
 
 num_input = 1568
-num_output = [50]
+num_output = [50, 100, 200, 400]
 num_steps = 255
 beta = 0.9
 threshold = 20
@@ -38,7 +38,7 @@ dog_transform = DualDoG(ON_kernel, OFF_kernel)
 
 # Training Hyperparameters
 
-num_samples = 10
-num_epochs = 5
+num_samples = 1000
+num_epochs = 100
 
 

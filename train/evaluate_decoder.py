@@ -5,7 +5,8 @@ import matplotlib.pyplot as plt
 from joblib import dump
 
 from model.spikegen import *
-from model.model_stdp import *
+from model.model_stdp_WTA import *
+
 from sklearn.linear_model import LinearRegression
 from hyperparameters.hyperparameters_stdp import *
 from skimage.metrics import mean_squared_error, structural_similarity

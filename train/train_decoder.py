@@ -4,7 +4,8 @@ import matplotlib.pyplot as plt
 from joblib import dump
 
 from model.spikegen import *
-from model.model_stdp import *
+from model.model_stdp_WTA import *
+
 from hyperparameters.hyperparameters_stdp import *
 from sklearn.linear_model import LinearRegression
 
